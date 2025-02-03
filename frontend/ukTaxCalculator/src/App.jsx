@@ -22,7 +22,7 @@ const App = () => {
   const calculateTax = async (salary) => {
     console.log(salary, typeof salary)
     try {
-      const res = await fetch('/api/', {
+      const res = await fetch('https://uktaxcalculator.vercel.app/calculate-tax', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
