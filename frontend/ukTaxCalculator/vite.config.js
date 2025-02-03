@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': {
+      '/api/': {
         target: 'https://uktaxcalculator-5r4urhyk5-brukmaks-projects.vercel.app/calculate-tax',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
