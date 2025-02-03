@@ -33,7 +33,7 @@ const InputForm = ( { calculateTax } ) => {
                     placeholder="eg. 30000"
                     required
                     min={0}
-                    step={0.01}
+                    step={0.0001}
                     value={salary}
                     onChange={(e) => setSalary(e.target.value)}
                     
