@@ -8,7 +8,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware, 
-    allow_origins=[ "https://uk-tax-calculator.vercel.app/", "http://localhost:3000"],  # Allow requests from this origin
+    allow_origins=[ "https://uk-tax-calculator.vercel.app", "http://localhost:3000"],  # Allow requests from this origin
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers

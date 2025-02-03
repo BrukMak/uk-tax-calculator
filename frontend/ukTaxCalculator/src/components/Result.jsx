@@ -5,10 +5,10 @@ const Result = ({data}) => {
   
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
-            <main>
+      <div className=" w-full gap-6 justify-items-center">
+            <main className="w-full md:w-[80%] lg:w-[70%] xl:w-[60%]">
               <div className="bg-white p-6 rounded-lg text-center md:text-left">
-              <h1 className="text-3xl font-bold mb-4">Tax Calculation</h1>
+              <h1 className="text-3xl font-bold mb-4 text-center">Tax Calculation</h1>
                 
                 <table className="table-auto w-full">
 
@@ -20,17 +20,17 @@ const Result = ({data}) => {
                   </thead>
                   <tbody>
                   <tr>
-                      <td className="border px-4 py-2">Annual Income</td>
+                      <td className="border px-4 py-2 w-1/2">Annual Income</td>
                       <td className="border
-                        px-4 py-2">£{ data.annual_income }</td>
+                        px-4 py-2 w-1/2">£{ data.annual_income }</td>
                     </tr>
                     <tr>
-                      <td className="border px-4 py-2">Income Tax <div className=' text-blue-500 text-xs '> See Breakdown</div></td>
+                      <td className="border px-4 py-2">Income Tax {/*<div className=' text-blue-500 text-xs '> See Breakdown</div>*/}</td>
                       <td className="border
                         px-4 py-2">£{data.income_tax}</td>
                     </tr> 
                     <tr>
-                      <td className="border px-4 py-2">National Insurance  <div className=' text-blue-500 text-xs '> See Breakdown</div> </td>
+                      <td className="border px-4 py-2">National Insurance  {/*<div className=' text-blue-500 text-xs '> See Breakdown</div>*/} </td>
                       <td className="border px-4 py-2">£{data.total_national_insurance}</td>
                     </tr>
                     <tr>

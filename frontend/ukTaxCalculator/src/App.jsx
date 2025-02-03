@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from './components/Hero'
 import InputForm from './components/InputForm'
 import Result from './components/Result'
-import Breakdown from './components/Breakdown'
 import { useState } from 'react'
 
 
@@ -18,6 +17,7 @@ const App = () => {
     total_tax: 0,
 
   });
+  
 
   const calculateTax = async (salary) => {
     console.log(salary, typeof salary)
@@ -40,15 +40,15 @@ const App = () => {
       return data;  // Return the result
     } catch (error) {
       console.error('Error:', error);
-    }
+    } 
   };
   return (
-    <>
+    <div className='justify-items-center'>
       <Hero />
       <InputForm calculateTax = {calculateTax} />
-      <Result data={data}/>
+       <Result data={data} />
   
-    </>
+    </div>
     )
 }
 
